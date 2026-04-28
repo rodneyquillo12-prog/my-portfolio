@@ -64,7 +64,7 @@ export const projects = [
         id: 1,
         title: "AI Chatbot",
         des: "Full Stack Generative-AI chatbot Application in MERN Stack with OLLAMA.",
-        img: "/screenshot_5.png",
+        img: "/aichatbot.png",
         link: "https://chat-my-ai.netlify.app/",
     },
     {
