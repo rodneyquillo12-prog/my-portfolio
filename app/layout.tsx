@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 
 export const metadata: Metadata = {
-  title: "Nirban's Portfolio",
+  title: "My Portfolio",
   description: "My portfolio made with Next.js, TypeScript and Tailwind CSS",
 };
 
