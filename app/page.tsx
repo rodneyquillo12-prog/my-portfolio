@@ -1,10 +1,14 @@
-import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
-import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
-import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNav";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
+const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
+const RecentProjects = dynamic(() => import("@/components/RecentProjects"), { ssr: false });
+const FloatingNav = dynamic(() => import("@/components/ui/FloatingNav").then(mod => ({ default: mod.FloatingNav })), { ssr: false });
 import { navItems } from "@/data";
 
 export default function Home() {

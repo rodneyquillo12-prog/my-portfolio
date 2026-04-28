@@ -1,7 +1,9 @@
 import { projects } from '@/data';
 import React from 'react'
-import { PinContainer } from './ui/3d-pin';
+import dynamic from 'next/dynamic';
 import { FaLocationArrow } from 'react-icons/fa';
+
+const PinContainer = dynamic(() => import('./ui/3d-pin').then(mod => ({ default: mod.PinContainer })), { ssr: false });
 
 const RecentProjects = () => {
     return (
