@@ -26,18 +26,31 @@ export const TextGenerateEffect = ({
     }, [scope.current]);
 
     const renderWords = () => {
+        const firstLineWords = wordsArray.slice(0, 4);
+        const secondLineWords = wordsArray.slice(4);
+        
         return (
-            <motion.div ref={scope}>
-                {wordsArray.map((word, idx) => {
-                    return (
+            <motion.div ref={scope} className="flex flex-col items-center">
+                <div>
+                    {firstLineWords.map((word, idx) => (
                         <motion.span
                             key={word + idx}
-                            className={`${idx > 3 ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
+                            className="dark:text-white text-black opacity-0"
                         >
                             {word}{" "}
                         </motion.span>
-                    );
-                })}
+                    ))}
+                </div>
+                <div>
+                    {secondLineWords.map((word, idx) => (
+                        <motion.span
+                            key={word + idx}
+                            className="text-purple opacity-0"
+                        >
+                            {word}{" "}
+                        </motion.span>
+                    ))}
+                </div>
             </motion.div>
         );
     };

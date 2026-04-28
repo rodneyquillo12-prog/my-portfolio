@@ -13,12 +13,12 @@ export const gridItems = [
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
-        img: "/b1.svg",
+        img: "/b1.png",
         spareImg: "",
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "I'm very flexible with EST time zone communications",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -40,7 +40,7 @@ export const gridItems = [
         id: 4,
         title: "Tech enthusiast with a passion for development.",
         description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
         titleClassName: "justify-start",
         img: "/grid.svg",
@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently working on a Defi protocol",
+        title: "Currently working on AI-related Web projects",
         description: "The Inside Scoop",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -57,25 +57,15 @@ export const gridItems = [
         img: "/b5.svg",
         spareImg: "/grid.svg",
     },
-    {
-        id: 6,
-        title: "Do you want to start a project together?",
-        description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-        imgClassName: "",
-        titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-        img: "",
-        spareImg: "",
-    },
 ];
 
 export const projects = [
     {
         id: 1,
-        title: "AI Expense Tracker",
-        des: "A web application for tracking personal finance with AI integration.",
-        img: "/expense.png",
-        link: "https://expense-tracker-phi-wine.vercel.app/",
+        title: "AI Chatbot",
+        des: "Full Stack Generative-AI chatbot Application in MERN Stack with OLLAMA.",
+        img: "/screenshot_5.png",
+        link: "https://chat-my-ai.netlify.app/",
     },
     {
         id: 2,
@@ -169,17 +159,35 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Blockchain Developer",
-        desc: "Build full-stack blockchain applications, from smart contracts to front-end interfaces using Solidity & React.js",
+        title: "Mobile Developer",
+        subtitle: "Apr 2020 - Nov 2022",
+        desc: "Build full-stack mobile applications, from native to cross-platform using React Native & Swift",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Blockchain Intern",
-        desc: "Assisted in developing tokenomics for a new cryptocurrency project.",
+        title: "Android and iOS Developer",
+        subtitle: "Feb 2023 - Dec 2023",
+        desc: "Developed and maintained native Android and iOS applications, optimizing performance and ensuring seamless user experience across platforms.",
         className: "md:col-span-2", // change to md:col-span-2
         thumbnail: "/exp2.svg",
+    },
+    {
+        id: 3,
+        title: "Senior Web Developer",
+        subtitle: "Mar 2024 - Oct 2024",
+        desc: "Led the development of scalable web applications, improving architecture, performance, and maintainability using modern frameworks.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp3.svg",
+    },
+    {
+        id: 4,
+        title: "Senior Web & AI and SaaS Developer",
+        subtitle: "Jan 2025 - Dec 2025",
+        desc: "Designed and built AI-powered SaaS platforms, integrating machine learning features and scalable cloud-based solutions.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp4.svg",
     }
 ];
 
@@ -187,16 +195,11 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
-        link: "https://www.github.com/nirban256"
+        link: "https://www.github.com/nirban"
     },
     {
         id: 2,
-        img: "/twit.svg",
-        link: "https://x.com/NirbanChakrab10"
-    },
-    {
-        id: 3,
         img: "/link.svg",
-        link: "https://www.linkedin.com/in/nirban-chakraborty/"
+        link: "https://www.linkedin.com/in/nirban/"
     },
 ];
