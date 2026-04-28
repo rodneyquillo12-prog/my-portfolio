@@ -156,6 +156,26 @@ export const companies = [
     },
 ];
 
+
+export const education = [
+    {
+        id: 1,
+        title: "Buenos Aires High School",
+        subtitle: "Apr 2007 - Mar 2013",
+        desc: "Degree: 9.6",
+        className: "md:col-span-2",
+        thumbnail: "/exp1.svg",
+    },
+    {
+        id: 2,
+        title: "National Technology University - Buenos Aires",
+        subtitle: "Aug 2014 - Dec 2019",
+        desc: "Bachelor's Degree in Computer Science, Graduated with Honors",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp4.svg",
+    }
+];
+
 export const workExperience = [
     {
         id: 1,
